@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (username === "Jay" && password === "Autajay") {
             alert("Login successful!");
-            open("homepage.html");
+            window.location.assign('homepage.html');
         } else {
             alert("Invalid username or password. Please try again.");
         }
