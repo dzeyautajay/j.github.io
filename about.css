@@ -32,7 +32,13 @@ display:inline-block;
     margin: 0 15px;
 }
 
-nav span{
+.navtab{
+display:flex;
+text-align:center;
+justify-content:center;
+}
+
+nav a{
 align-items:center;
     text-decoration: none;
     color: #fff;
@@ -40,7 +46,7 @@ align-items:center;
     transition: color 0.3s ease;
 }
 
-nav span:hover {
+nav a:hover {
     color: #ff8000;
 }
 
