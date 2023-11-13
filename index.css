@@ -75,13 +75,21 @@ font-size:8px;
 justify-items:start;
 align-items:ceter;
 margin-top:20px;
-text-decoration:none;
 padding:30px;
 display:flex;
 flex:1;
 color:gray;
 font-size:8px;
 }
+
+.fb{
+justify-items:start;
+align-items:ceter;
+text-decoration:none;
+}
+
+.fb:visited{
+text-decoration:none;}
 
 button {
     width: 100%;
