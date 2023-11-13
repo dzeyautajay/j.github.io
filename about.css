@@ -11,9 +11,12 @@ body {
 }
 
 nav {
+display: inline-block;
+justify-content:flex-star;
 text-align:center;
   background-color: #002850;
-    padding: 10px;
+height:30px;
+    padding: 5px;
     position: sticky;
     top: 0;
     z-index: 100;
