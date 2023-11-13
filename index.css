@@ -1,4 +1,5 @@
 body {
+    font-family: Arial, Helvetica,  sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +61,7 @@ input {
 
 .disclaimer {
 width: 89.6%;
-margin:10px;
+margin:30px;
 padding:10px;
 border-radius:10px;
 background: #bdff231e;
@@ -69,6 +70,7 @@ font-size:10px;
 }
 
 .disclaimer fb{
+margin:30px;
 display:flex;
 flex:1;
 background: #bdff231e;
