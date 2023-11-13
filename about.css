@@ -29,7 +29,10 @@ nav ul {
 }
 
 nav li {
-    display: inline;
+     display: flex;
+  flex-direction:row;
+align-items:center;
+justify-content:flex-start;
     margin: 0 15px;
 }
 
