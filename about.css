@@ -30,7 +30,8 @@ display:inline-block;
     margin: 0 15px;
 }
 
-nav a {
+nav a{
+align-items:center;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
