@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
-        if (username === "Jay" && password === "Autajay") {
+        if (username === "Ejay" && password === "Autajay") {
             alert("Login successful!");
             window.location.assign('homepage.html');
         } else {
