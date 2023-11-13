@@ -10,11 +10,7 @@ body {
     font-size: 50px;
 }
 
-nav {
-  display: flex;
-  flex-direction:row;
-align-items:center;
-justify-content:flex-start;
+nav {
   background-color: #002850;
     padding: 10px;
     position: sticky;
@@ -30,9 +26,7 @@ nav ul {
 
 nav li {
      display: flex;
-  flex-direction:row;
 align-items:center;
-justify-content:flex-start;
     margin: 0 15px;
 }
 
