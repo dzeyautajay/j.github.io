@@ -60,6 +60,9 @@ input {
 }
 
 .disclaimer {
+justify-items:start;
+align-items:ceter;
+margin-bottom:30px;
 text-align:left;
 align-text:left;
 margin-top:20px;
