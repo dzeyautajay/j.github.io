@@ -69,6 +69,8 @@ font-size:10px;
 }
 
 .disclaimer fb p2{
+justify-items:start;
+align-items:ceter;
 margin-top:20px;
 text-decoration:none;
 padding:30px;
