@@ -58,6 +58,23 @@ input {
     justify-content: flex-end;
 }
 
+.disclaimer {
+margin:10px;
+padding:10px;
+border-radius:10px;
+background: #bdff231e;
+color:gray;
+font-size:10px;
+}
+
+.disclaimer fb{
+display:flex;
+flex:1;
+background: #bdff231e;
+color:gray;
+font-size:10px;
+}
+
 button {
     width: 100%;
     padding: 10px;
