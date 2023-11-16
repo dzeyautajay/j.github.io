@@ -73,6 +73,7 @@
   display: none;
   width: 100%;
   height: auto;
+    opacity:0;
     transition: opacity 0.9s ease-in-out;
 }
 
@@ -170,10 +171,10 @@ function showSlides(n) {
   }
   
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
+    slides[i].style.opacity = '0'; // Hide all slides
   }
   
-  slides[slideIndex].style.display = 'block';
+  slides[slideIndex].style.opacity = '1';
 }
 
 // Autoplay
@@ -182,7 +183,7 @@ let autoplayInterval;
 function startAutoplay() {
   autoplayInterval = setInterval(() => {
     changeSlide(1);
-  }, 2000); // Change slides every 2 seconds (2000ms)
+  }, 4000); // Change slides every 4 seconds (4000ms)
 }
 
 startAutoplay(); // Start autoplay when the page loads
