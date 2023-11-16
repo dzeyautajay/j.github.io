@@ -171,10 +171,10 @@ function showSlides(n) {
   }
   
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.opacity = '0'; // Hide all slides
+    slides[i].style.display = 'none';
   }
   
-  slides[slideIndex].style.opacity = '1';
+  slides[slideIndex].style.display = 'block';
 }
 
 // Autoplay
@@ -187,8 +187,5 @@ function startAutoplay() {
 }
 
 startAutoplay(); // Start autoplay when the page loads
-
-
-
-    </script>
+ </script>
 </html>
