@@ -5,7 +5,21 @@
     <title>Activity 1.2</title>
     <style>
         /* Style for picture container */
+video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+        
+.glassmorphism{
+    align-items:center;
+}
+        
         header{
+            position:relative;
             font-family:Sirens - Bold sans;
           font-size: 50px;
           margin-bottom: 80px;
@@ -30,11 +44,14 @@
 </head>
 <body>
   <header>
-    
+      <video autoplay muted loop>
+          <source src="./source/vid1.mp4" type="video/mp4">
+     <div class="glassmorphism">
+            <img src="./main/logo.png" alt="" height="60px" width="60px"data-tilt/></div>
  
     <h1>Activity 1.2</h1>
     <p>Jay D. Autajay</p>
-    <p>Greatcyl Dela Cruz</p>
+    <p>Ma'am Greatcyl Dela Cruz</p>
     <p>ASEAN Cultural and Heritage Studies</p>
       
     </header>
