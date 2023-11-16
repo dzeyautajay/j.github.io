@@ -38,6 +38,7 @@
             padding-bottom: 30px;
             text-align:center;
             color:#FFFFFF;
+            background-color:#000000;
         }
         .text1 h1,
         .text1 p{
@@ -155,6 +156,13 @@
     <footer><p3>Copyright © 2023 Jay Autajay. All rights reserved.</p3></footer>
 
     <script>
+let slideIndex = 0;
+showSlides(slideIndex);
+
+function changeSlide(n) {
+  showSlides(slideIndex += n);
+}
+
 function showSlides(n) {
   const slides = document.querySelectorAll('.slides img');
   
@@ -165,11 +173,23 @@ function showSlides(n) {
   }
   
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.opacity = '0'; // Hide all slides
+    slides[i].style.display = 'none';
   }
   
-  slides[slideIndex].style.opacity = '1'; // Show current slide
+  slides[slideIndex].style.display = 'block';
 }
+
+// Autoplay
+let autoplayInterval;
+
+function startAutoplay() {
+  autoplayInterval = setInterval(() => {
+    changeSlide(1);
+  }, 2000); // Change slides every 2 seconds (2000ms)
+}
+
+startAutoplay(); // Start autoplay when the page loads
+
 
 
     </script>
