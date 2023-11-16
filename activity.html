@@ -62,36 +62,24 @@
             border: 1px solid #000;
         }
 
-        .slideshow-container {
+ .slideshow-container {
+     margin-top:50px;
   position: relative;
   max-width: 800px;
   margin: auto;
+  overflow: hidden; /* Ensure images don't overflow */
 }
 
 .slides img {
-  display: none;
+  position: absolute;
   width: 100%;
   height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 16px;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  z-index: 1;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
+  /* Styles remain the same */
 }
 
 
@@ -152,13 +140,6 @@
     <footer><p3>Copyright © 2023 Jay Autajay. All rights reserved.</p3></footer>
 
     <script>
-        let slideIndex = 0;
-showSlides(slideIndex);
-
-function changeSlide(n) {
-  showSlides(slideIndex += n);
-}
-
 function showSlides(n) {
   const slides = document.querySelectorAll('.slides img');
   
@@ -169,22 +150,12 @@ function showSlides(n) {
   }
   
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
+    slides[i].style.opacity = '0'; // Hide all slides
   }
   
-  slides[slideIndex].style.display = 'block';
+  slides[slideIndex].style.opacity = '1'; // Show current slide
 }
 
-// Autoplay
-let autoplayInterval;
-
-function startAutoplay() {
-  autoplayInterval = setInterval(() => {
-    changeSlide(1);
-  }, 2000); // Change slides every 2 seconds (2000ms)
-}
-
-startAutoplay(); // Start autoplay when the page loads
 
     </script>
 </html>
